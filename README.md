@@ -1,1 +1,1 @@
-# portfolio
+Welcome to my Porfolio Project page. I've created this React app to showcase my skills, display information about myself, my previous projects and provide access to an updated resume. 
