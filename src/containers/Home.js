@@ -46,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Home = props => {
-    localStorage.setItem('background', "https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2775&q=80")
     const [active, toggle] = useState(false)
     const classes = useStyles();
 

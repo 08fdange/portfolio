@@ -7,14 +7,14 @@ import About from './containers/About.js';
 import Projects from './containers/Projects/Projects.js';
 import Footer from './components/Footer.js';
 import './App.css';
-
+// https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2775&q=80
 
 const App = () => {
 
   const useStyles = makeStyles((theme) => ({
     root: {
       minHeight: '100vh',
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2775&q=80")`,
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/background1.jpg")`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     }

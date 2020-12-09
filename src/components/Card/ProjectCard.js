@@ -14,6 +14,7 @@ const ProjectCard = ({project}) => {
         }
     })
     
+
     return (
         <animated.div id={`card-${index}`} className="card" style={fade} >
             <img src={pictures.picture1} alt={title} />
