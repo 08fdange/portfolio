@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.app-bar-button{
+  color: '#fff'; 
+  text-decoration: 'none';
+  font-family: 'Ubuntu';
+}
+
+.active-app-bar-button{
+  color: '#669999'; 
+  text-decoration: 'none';
+  font-family: 'Ubuntu';
+}
+
 .app-bar-button:hover{
   color: '#669999';
 }

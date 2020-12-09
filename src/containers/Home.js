@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Home = props => {
+    localStorage.setItem('background', "https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2775&q=80")
     const [active, toggle] = useState(false)
     const classes = useStyles();
 
@@ -60,10 +61,19 @@ const Home = props => {
 
     const fadeText = useSpring({
         from: {
-            fontSize: '1rem'
+            fontSize: '2rem'
         },
         to: {
             fontSize: '4rem'
+        }
+    })
+
+    const slideDiv = useSpring({
+        from: {
+           transform: "(0, 100%)"
+        },
+        to: {
+            transform: "(0, 0%)"
         }
     })
 
@@ -77,14 +87,15 @@ const Home = props => {
 
     const AnimatedBox = animated(Box);
     const AnimatedTypography = animated(Typography);
+    const AnimatedDivider = animated(Divider);
     const AnimatedButton = animated(Button);
 
     return(
         <Container className={classes.homeContainer}>
-            <AnimatedBox className={classes.homeDiv}>
+            <AnimatedBox style={slideDiv} className={classes.homeDiv}>
                 <Box>
                     <AnimatedTypography className={classes.name} style={fadeText} variant="sub-title">Frank D'Angelo</AnimatedTypography>
-                    <Divider className={classes.divider} style={fade}/>
+                    <AnimatedDivider className={classes.divider} style={fade}/>
                     <AnimatedTypography className={classes.position} style={fade} variant="h5">Full-Stack Developer</AnimatedTypography>
                     
                     <AnimatedButton 

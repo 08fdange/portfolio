@@ -56,7 +56,6 @@ const useStyles = makeStyles((theme) => ({
 
 const NavBar = () => {
   const classes = useStyles();
-
   const [state, setState] = React.useState({
     drawerOpen: false
   });
@@ -101,8 +100,8 @@ const NavBar = () => {
           </Typography>
           <Button>
             <NavLink
-              className='app-bar-button' 
-              style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }}
+              className='app-bar-button'
+              style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
               to='/'
             >Home
             </NavLink>

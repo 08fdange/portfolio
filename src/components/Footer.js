@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-const Foot = () => {
+const Footer = () => {
     const classes = useStyles();
     const [active, toggle] = useState(false);
     const iconHover = useSpring({
@@ -81,4 +81,4 @@ const Foot = () => {
     )
 }
 
-export default Foot;
+export default Footer;
