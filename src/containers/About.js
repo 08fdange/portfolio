@@ -16,7 +16,7 @@ const About = () => {
     const classes = useStyles();
     const fade = useSpring({
         from: {
-            opacity: .5
+            opacity: .2
         },
         to: {
             opacity: 1

@@ -7,7 +7,7 @@ const ProjectCard = ({project}) => {
     const { index, title, pictures, description, gitHubLink } = project;
     const fade = useSpring({
         from: {
-            opacity: 0
+            opacity: .2
         },
         to: {
             opacity: 1
