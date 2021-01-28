@@ -33,20 +33,21 @@ const data = {
             "description": 
             "A Single Page Application designed with HTML, CSS and vanilla JavaScript with a Rails API backend where users can search for and rate their favorite burger joints. Implements Yelp Search API to populate the page with different restaurants based on location query.",
             "pictures": {
-                "picture1": process.env.PUBLIC_URL + "./images/burgerbites0.png"
+                "picture1": process.env.PUBLIC_URL + "./images/burgerbites0.png",
+                "picture2": process.env.PUBLIC_URL + "./images/burgerbites1.png",
+                "picture3": process.env.PUBLIC_URL + "./images/burgerbites2.png"
             },
             "githubLink": "https://github.com/08fdange/burgerbites"
         },
         {
-            "index": 2,
+            "index": 3,
             "title": "HomeInspex",
             "description":
             "A Ruby on Rails application that clients can use to schedule home inspections and inspectors can track the progress of their currently scheduled home inspections.",
             "pictures": {
                 "picture1": process.env.PUBLIC_URL + "./images/HomeInspex1.png",
-                "picture2": "https://res.cloudinary.com/dbtndpluf/image/upload/v1606969674/Project%20Pictures/HomeInspex3_rojtdp.png",
-                "picture3": "https://res.cloudinary.com/dbtndpluf/image/upload/v1606969675/Project%20Pictures/HomeInspex1_cfostq.png",
-                "picture4": "https://res.cloudinary.com/dbtndpluf/image/upload/v1606969674/Project%20Pictures/HomeInspex4_cz1eyz.png"
+                "picture2": process.env.PUBLIC_URL + "./images/HomeInspex2.png",
+                "picture3": process.env.PUBLIC_URL + "./images/HomeInspex3.png",
         
             },
             "githubLink": "https://github.com/08fdange/homeinspex"
@@ -57,7 +58,8 @@ const data = {
             "description":
             "A Covid-19 Tracker that shows global infected, recovered and deaths stats, a line chart of daily global infected and deaths stats and current infected, recovered and deaths stats by each country (chosen by a Country drop down bar)",
             "pictures": {
-                "picture1": "" 
+                "picture1": process.env.PUBLIC_URL + "./images/covid-tracker.png",
+                "picture2": process.env.PUBLIC_URL + "./images/covid-tracker2.png"
             }
         }    ]
 }

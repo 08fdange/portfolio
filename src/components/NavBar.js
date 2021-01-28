@@ -122,7 +122,14 @@ const NavBar = () => {
             >About
             </NavLink>
           </Button>
-          <Button style={{color: '#fff', fontFamily: 'Ubuntu'}}>Resume</Button>
+          <Button>
+            <NavLink
+              className='app-bar-button'
+              style={{color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu'}}
+              to='/resume'
+              >Resume
+              </NavLink>
+            </Button>
         </Toolbar>
       </AppBar>
       <Drawer

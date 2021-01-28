@@ -1,81 +1,34 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import ProjectCard from '../../components/Card/ProjectCard.js';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
-import Button from '@material-ui/core/Button';
-import NavigateBefore from '@material-ui/icons/NavigateBefore';
-import NavigateNext from '@material-ui/icons/NavigateNext';
-import data from '../../data/data.js';
+import Carousel from 'react-material-ui-carousel'
 import './Projects.css';
-
-const styles = theme => ({
-    root: {
-        marginTop: '50px',
-        marginButton: '50px',
-        display: 'grid',
-        placeItems: 'center'
-    },
-    buttonGroup: {
-        background: '#669999'
-    }
-})
+import data from '../../data/data.js';
 
 class Projects extends React.Component {
-    state = {
-        projects: data.projects,
-        project: data.projects[0]
-    }
-
-    nextProject = (e) => {
-        e.preventDefault();
-        const newIndex = this.state.project.index + 1
-        this.setState({
-            project: data.projects[newIndex]
-        });
-    }
-
-    previousProject = (e) => {
-        e.preventDefault();
-        const newIndex = this.state.project.index - 1
-        this.setState({
-            project: data.projects[newIndex]
-        });
-    }
-
-    
-
     render() {
-        const { classes } = this.props;
-        const {project} = this.state;
-        
-        return(
-            <Container className={classes.root}>
-                <div className='cards-slider'>
-                    <div className="cards-slider-wrapper">
-                        <ProjectCard key={project.index} project={project} />
+        const { projects } = data;
+
+        const projectsDivs = projects.map(project => {
+            return(
+                <div className='project-div' align='center'>
+                    <h1>{project.title}</h1>
+                    <img className='project-image-div' src={project.pictures.picture1} alt={project.title} />
+                    <div className='desc-div'>
+                        <p>{project.description}</p>
                     </div>
                 </div>
-                
-                <ButtonGroup className={classes.buttonGroup}>
-                    <Button
-                        onClick={(e) => this.previousProject(e)}
-                        disabled={project.index === 0}
-                    >
-                        <NavigateBefore/>
-                    </Button>
-                    <Button
-                        onClick={(e) => this.nextProject(e)}
-                        disabled={project.index === data.projects.length -1}
-                    >
-                        <NavigateNext/>
-                    </Button>
-                </ButtonGroup>
-            </Container>
+            )
+        })
+
+        return(
+            <div>
+                <div className='spacer'></div>
+                <Carousel>
+                    { projectsDivs }
+                </Carousel>
+                <div className='spacer'></div>
+            </div>
         )
     }
 }
 
-export default withStyles(styles)(Projects);
-
-//  { withTheme: true }
+export default Projects;
