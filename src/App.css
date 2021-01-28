@@ -30,6 +30,18 @@
   color: white !important;
 }
 
+.MuiSvgIcon-root:hover {
+  color:  #669999 !important;
+}
+
+a.app-bar-button:hover {
+  color:  #669999 !important;
+}
+
+a.app-bar-button.active:hover {
+  color:  #669999 !important;
+}
+
 @media only screen and (max-width: 600px) {
   .app-bar-button {
     display: none;

@@ -128,13 +128,6 @@ const NavBar = () => {
           </ListItem>
 
       </List>
-      <Divider />
-      <List>
-        <ListItem button>
-          <ListItemIcon><InboxIcon /></ListItemIcon>
-          <ListItemText />
-        </ListItem>
-      </List>
     </div>
   );
 
