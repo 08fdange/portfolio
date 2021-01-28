@@ -22,7 +22,7 @@ class Projects extends React.Component {
         return(
             <div>
                 <div className='spacer'></div>
-                <Carousel>
+                <Carousel interval={6000}>
                     { projectsDivs }
                 </Carousel>
                 <div className='spacer'></div>
