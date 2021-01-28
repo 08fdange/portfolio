@@ -14,6 +14,9 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import HomeIcon from '@material-ui/icons/Home';
+import AssessmentIcon from '@material-ui/icons/Assessment';
+import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfied';
+import DescriptionIcon from '@material-ui/icons/Description';
 import BlurCircular from '@material-ui/icons/BlurCircular';
 
 const useStyles = makeStyles((theme) => ({
@@ -71,12 +74,59 @@ const NavBar = () => {
   const list = (
     <div>
       <List className={classes.drawerList}>
+
           <ListItem button>
             <ListItemIcon>
-              <HomeIcon style={{color: '#fff' }}/>
-              <ListItemText className={classes.listItemText} primary="HOME"></ListItemText>
+              <NavLink
+                className='drawer-button'
+                style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
+                to='/'
+              >
+                <span className='drawer-option'><HomeIcon style={{color: '#fff' }}/>HOME
+                </span>
+              </NavLink>
             </ListItemIcon>
           </ListItem>
+
+          <ListItem button>
+            <ListItemIcon>
+              <NavLink
+                className='drawer-button'
+                style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
+                to='/projects'
+              >
+                <span className='drawer-option'><AssessmentIcon style={{color: '#fff' }}/>PROJECTS
+                </span>
+              </NavLink>
+            </ListItemIcon>
+          </ListItem>
+
+          <ListItem button>
+            <ListItemIcon>
+              <NavLink
+                className='drawer-button'
+                style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
+                to='/about'
+              >
+                <span className='drawer-option'><SentimentVerySatisfiedIcon style={{color: '#fff' }}/>ABOUT
+                </span>
+              </NavLink>
+            </ListItemIcon>
+          </ListItem>
+
+          <ListItem button>
+            <ListItemIcon>
+              <NavLink
+                className='drawer-button'
+                style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
+                to='/resume'
+              >
+                <span className='drawer-option'><DescriptionIcon style={{color: '#fff' }}/>RESUME
+                </span>
+              </NavLink>
+            </ListItemIcon>
+          </ListItem>
+
       </List>
       <Divider />
       <List>
@@ -103,7 +153,7 @@ const NavBar = () => {
               className='app-bar-button'
               style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
               to='/'
-            >Home
+            ><span className='nav-bar-option'>Home</span>
             </NavLink>
           </Button>
           <Button>

@@ -14,10 +14,20 @@
   font-family: 'Ubuntu';
 }
 
-.app-bar-button:hover{
-  color: '#669999';
+.nav-bar-option:hover{
+  color: '#669999' !important;
 }
 
 .resume-div {
   background-color: white;
+}
+
+.drawer-option:hover {
+  color: #669999;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-bar-button {
+    display: none;
+  }
 }
