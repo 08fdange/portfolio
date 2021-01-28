@@ -26,6 +26,10 @@
   color: #669999;
 }
 
+.MuiSvgIcon-root {
+  color: white !important;
+}
+
 @media only screen and (max-width: 600px) {
   .app-bar-button {
     display: none;

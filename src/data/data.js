@@ -10,7 +10,8 @@ const data = {
                 "picture2": process.env.PUBLIC_URL + "./images/shoppies2.png",
                 "picture3": process.env.PUBLIC_URL + "./images/shoppies3.png",
                 "picture4": process.env.PUBLIC_URL + "./images/shoppies4.png"
-            }
+            },
+            "githubLink": "https://github.com/08fdange/the_shoppies"
 
         },
         {   
@@ -60,7 +61,8 @@ const data = {
             "pictures": {
                 "picture1": process.env.PUBLIC_URL + "./images/covid-tracker.png",
                 "picture2": process.env.PUBLIC_URL + "./images/covid-tracker2.png"
-            }
+            },
+            "githubLink": "https://github.com/08fdange/covidtracker"
         }    ]
 }
 
