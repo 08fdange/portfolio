@@ -7,7 +7,17 @@
   padding: 10px;
   max-width: 700px;
   text-align: left;
-  margin: 0 auto; }
+  margin: 0 auto; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
   .card:hover {
     background-color: #f3f3f3;
     border-color: #f3f3f3; }
@@ -15,20 +25,6 @@
     max-width: calc(100%);
     margin: 0 auto;
     display: block; }
-  .card .index {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
-    line-height: 20px;
-    font-size: 14px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    padding: 0 10px; }
-  .card .price {
-    margin: 0;
-    padding: 10px 0;
-    font-weight: bold; }
   .card .details {
     position: relative;
     font-family: 'Ubuntu';}
