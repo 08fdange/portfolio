@@ -1,69 +1,6 @@
-/* .cards-slider-wrapper {
-    display: flex;
-    position: absolute;
-    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-.cards-slider-wrapper .card {
-    flex: 1;
-    min-width: 500px;
-    opacity: 0.7;
-    transform: scale(0.8);
-    box-shadow: none;
-    background-color: white;
-    border-color: white;
-    transition: opacity 300ms linear, border-color 300ms linear, background-color 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-.cards-slider-wrapper .card .details {
-    opacity: 0;
-    transition: opacity 150ms linear; }
-  
-  .cards-slider.active-slide-0 #card-0 {
-    opacity: 1;
-    transform: scale(1);
-    background-color: #f3f3f3;
-    border-color: #f3f3f3; }
-    .cards-slider.active-slide-0 #card-0 .details {
-      opacity: 1; }
-  
-  .cards-slider.active-slide-1 #card-1 {
-    opacity: 1;
-    transform: scale(1);
-    background-color: #f3f3f3;
-    border-color: #f3f3f3; }
-    .cards-slider.active-slide-1 #card-1 .details {
-      opacity: 1; }
-  
-  .cards-slider.active-slide-2 #card-2 {
-    opacity: 1;
-    transform: scale(1);
-    background-color: #f3f3f3;
-    border-color: #f3f3f3; }
-    .cards-slider.active-slide-2 #card-2 .details {
-      opacity: 1; }
-  
-  .cards-slider.active-slide-3 #card-3 {
-    opacity: 1;
-    transform: scale(1);
-    background-color: #f3f3f3;
-    border-color: #f3f3f3; }
-    .cards-slider.active-slide-3 #card-3 .details {
-      opacity: 1; }
+   .project-image-div {
 
-.card-slider {
-    position: relative;
-    max-width: 226px;
-    margin: 0 auto; }
-.cards-slider:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    left: 0; } */
-
-
-    .project-image-div {
-
-      max-width: 50%;
+      max-width: 40%;
       border-color: white;
       border: 5px;
     }
@@ -75,14 +12,32 @@
     }
 
     .desc-div {
-      max-width: 50%
+      max-width:40%
     }
 
     .spacer {
       height: 0px;
     }
 
+    @media only screen and (max-width: 1500px) {
+      .project-image-div {
+        max-width: 50%;
+      }
+      .desc-div {
+        max-width: 50%;
+      }
+    }
+
     @media only screen and (max-width: 1350px) {
+      .project-image-div {
+        max-width: 60%
+      }
+      .desc-div {
+        max-width: 60%
+      }
+    }
+
+    @media only screen and (max-width: 1250px) {
       .project-image-div {
         max-width: 60%;
       }
@@ -97,6 +52,15 @@
       }
       .desc-div {
         max-width: 70%
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .project-image-div {
+        max-width: 72%;
+      }
+      .desc-div {
+        max-width: 72%
       }
     }
 
