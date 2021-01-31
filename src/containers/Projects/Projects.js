@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkIcon from '@material-ui/icons/Link';
-import HttpIcon from '@material-ui/icons/Http';
 import './Projects.css';
 import data from '../../data/data.js';
 
@@ -19,8 +18,8 @@ class Projects extends React.Component {
                         <p>{project.description}</p>
                     </div>
                     <span>
-                        <a href={project.githubLink} target='_blank'><GitHubIcon/></a>
-                        {project.hostedLink? <a href={project.hostedLink} target='_blank'> <LinkIcon/></a>:null}
+                        <a href={project.githubLink} target='_blank' rel='noreferrer'><GitHubIcon/></a>
+                        {project.hostedLink? <a href={project.hostedLink} target='_blank' rel='noreferrer'> <LinkIcon/></a>:null}
                     </span>
                 </div>
             )
