@@ -19,6 +19,10 @@
       height: 0px;
     }
 
+    circle {
+      
+    }
+
     @media only screen and (max-width: 1500px) {
       .project-image-div {
         max-width: 50%;

@@ -57,13 +57,15 @@ const data = {
             "index": 4,
             "title": "CovidTracker",
             "description":
-            "A Covid-19 Tracker that shows global infected, recovered and deaths stats, a line chart of daily global infected and deaths stats and current infected, recovered and deaths stats by each country (chosen by a Country drop down bar)",
+            "A Covid-19 Tracker that shows global infected, recovered and deaths stats, a line chart of daily global infected and deaths stats and current infected, recovered and deaths stats by each country",
             "pictures": {
                 "picture1": process.env.PUBLIC_URL + "./images/covid-tracker.png",
                 "picture2": process.env.PUBLIC_URL + "./images/covid-tracker2.png"
             },
-            "githubLink": "https://github.com/08fdange/covidtracker"
-        }    ]
+            "githubLink": "https://github.com/08fdange/covidtracker",
+            "hostedLink": "https://covidtracker.08fdange.vercel.app/"
+        }    
+    ]
 }
 
 export default data;
