@@ -8,7 +8,7 @@ import Projects from './containers/Projects/Projects.js';
 import Resume from './containers/Resume.js';
 import Footer from './components/Footer.js';
 import './App.css';
-import background from './assets/background1.jpg';
+import background from './assets/background2.jpg';
 
 const App = () => {
 
