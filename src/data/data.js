@@ -46,9 +46,9 @@ const data = {
             "description":
             "A Ruby on Rails application that clients can use to schedule home inspections and inspectors can track the progress of their currently scheduled home inspections.",
             "pictures": {
-                "picture1": process.env.PUBLIC_URL + "./images/homeInspex1.jpg",
-                "picture2": process.env.PUBLIC_URL + "./images/homeInspex2.jpg",
-                "picture3": process.env.PUBLIC_URL + "./images/homeInspex3.jpg",
+                "picture1": process.env.PUBLIC_URL + "./images/homeinspex1.jpg",
+                "picture2": process.env.PUBLIC_URL + "./images/homeinspex2.jpg",
+                "picture3": process.env.PUBLIC_URL + "./images/homeinspex3.jpg",
         
             },
             "githubLink": "https://github.com/08fdange/homeinspex"
