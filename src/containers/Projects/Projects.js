@@ -19,7 +19,7 @@ class Projects extends React.Component {
                     </div>
                     <span>
                         <a href={project.githubLink} target='_blank' rel='noreferrer'><GitHubIcon/></a>
-                        {project.hostedLink? <a href={project.hostedLink} target='_blank' rel='noreferrer'> <LinkIcon/></a>:null}
+                        {project.hostedLink? <a href={project.hostedLink} target='_blank' title='Hosted Link' rel='noreferrer'> <LinkIcon/></a>:null}
                     </span>
                 </div>
             )
