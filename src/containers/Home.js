@@ -63,8 +63,12 @@ const Home = props => {
 
     if (window.innerWidth < 500) {
         nameSize = '2.3rem'
+    } else if (window.innerWidth < 540) {
+        nameSize = '2.5rem'
+    } else if (window.innerWidth < 600) {
+        nameSize = '3 rem'
     } else if (window.innerWidth < 700) {
-        nameSize = '2.8 rem'
+        nameSize = '3.4 rem'
     }
 
     const fadeText = useSpring({
