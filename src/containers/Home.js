@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
         
     },
     name: {
-        fontFamily: 'Major Mono Display'
+        fontFamily: 'Major Mono Display',
+        padding: '15px'
     },
     position: {
         fontFamily: 'Ubuntu'
@@ -58,14 +59,22 @@ const Home = props => {
         }
     })
 
+    let nameSize = '4rem'
+
+    if (window.innerWidth < 500) {
+        nameSize = '2.3rem'
+    } else if (window.innerWidth < 700) {
+        nameSize = '2.8 rem'
+    }
+
     const fadeText = useSpring({
         from: {
             fontSize: '2rem'
         },
         to: {
-            fontSize: '4rem'
-        }
-    })
+            fontSize: nameSize
+        }        
+    })   
 
     const slideDiv = useSpring({
         from: {
