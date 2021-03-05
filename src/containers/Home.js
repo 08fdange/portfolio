@@ -60,8 +60,11 @@ const Home = props => {
     })
 
     let nameSize = '4rem'
-
-    if (window.innerWidth < 500) {
+    if (window.innerWidth < 350) {
+        nameSize = '1.8rem'
+    }else if (window.innerWidth < 400) {
+        nameSize = '2rem'
+    }else if (window.innerWidth < 500) {
         nameSize = '2.3rem'
     } else if (window.innerWidth < 540) {
         nameSize = '2.5rem'
