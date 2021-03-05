@@ -2,6 +2,18 @@ const data = {
     "projects": [
         {
             "index": 0,
+            "title": "Slack-Clone",
+            "description":
+            "A Slack clone created with React and utilizing a Firebase backend. Still rolling out features for this, but Google authentication, messaging and channels are fully functional.",
+            "pictures": {
+                "picture1": process.env.PUBLIC_URL + "./images/slack_clone1.jpg"
+            },
+            "githubLink": "https://github.com/08fdange/slack-clone",
+            "hostedLink": "https://slack-clone-beta.vercel.app/"
+
+        },
+        {
+            "index": 1,
             "title": "The Shoppies",
             "description":
             "A movie/tv show nomination app built with React.js frontend and a Node.js/Express backend using MongoDB to store data.",
@@ -15,7 +27,7 @@ const data = {
 
         },
         {   
-            "index": 1,
+            "index": 2,
             "title": "PiratePort",
             "description": 
             "An online garage sale developed with React/Redux frontend and a Rails API backend. Users can list their items for sale, browse through available items for sale with filtering and contact sellers directly via their contact information.",
@@ -29,7 +41,7 @@ const data = {
             
         },
         {
-            "index": 2,
+            "index": 3,
             "title": "BurgerBites",
             "description": 
             "A Single Page Application designed with HTML, CSS and vanilla JavaScript with a Rails API backend where users can search for and rate their favorite burger joints. Implements Yelp Search API to populate the page with different restaurants based on location query.",
@@ -41,7 +53,7 @@ const data = {
             "githubLink": "https://github.com/08fdange/burgerbites"
         },
         {
-            "index": 3,
+            "index": 4,
             "title": "HomeInspex",
             "description":
             "A Ruby on Rails application that clients can use to schedule home inspections and inspectors can track the progress of their currently scheduled home inspections.",
@@ -54,7 +66,7 @@ const data = {
             "githubLink": "https://github.com/08fdange/homeinspex"
         },
         {
-            "index": 4,
+            "index": 5,
             "title": "CovidTracker",
             "description":
             "A Covid-19 Tracker that shows global infected, recovered and deaths stats, a line chart of daily global infected and deaths stats and current infected, recovered and deaths stats by each country. Hosted (link next to Github symbol).",
@@ -67,7 +79,7 @@ const data = {
             "hostedLink": "https://covidtracker.08fdange.vercel.app/"
         },
         {
-            "index": 5,
+            "index": 6,
             "title": "Simple Calculator",
             "description":
             "A simple calculator built using functional components in React. It's just like the one you might have on your phone. Hosted (link next to Github symbol).",
