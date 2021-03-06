@@ -79,12 +79,13 @@ const NavBar = () => {
                 style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
                 to='/'
               >
-                <span className='drawer-option'><HomeIcon style={{color: '#fff' }}/>HOME
-                </span>
+                <div className='drawer-button-div'>
+                  <HomeIcon style={{color: '#fff' }}/>
+                  &nbsp;HOME
+                </div>
               </NavLink>
-            </ListItemIcon>
+            </ListItemIcon> 
           </ListItem>
-
           <ListItem button>
             <ListItemIcon>
               <NavLink
@@ -92,8 +93,10 @@ const NavBar = () => {
                 style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
                 to='/projects'
               >
-                <span className='drawer-option'><AssessmentIcon style={{color: '#fff' }}/>PROJECTS
-                </span>
+                <div className='drawer-button-div'>
+                  <AssessmentIcon style={{color: '#fff' }}/>
+                  &nbsp;PROJECTS
+                </div>
               </NavLink>
             </ListItemIcon>
           </ListItem>
@@ -105,8 +108,10 @@ const NavBar = () => {
                 style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
                 to='/about'
               >
-                <span className='drawer-option'><SentimentVerySatisfiedIcon style={{color: '#fff' }}/>ABOUT
-                </span>
+                <div className='drawer-button-div'>
+                  <SentimentVerySatisfiedIcon style={{color: '#fff' }}/>
+                  &nbsp;ABOUT 
+                </div>
               </NavLink>
             </ListItemIcon>
           </ListItem>
@@ -118,8 +123,10 @@ const NavBar = () => {
                 style={{ color: '#fff', textDecoration: 'none', fontFamily: 'Ubuntu' }} 
                 to='/resume'
               >
-                <span className='drawer-option'><DescriptionIcon style={{color: '#fff' }}/>RESUME
-                </span>
+                <div className='drawer-button-div'>
+                  <DescriptionIcon style={{color: '#fff' }}/>
+                  &nbsp;RESUME
+                </div>
               </NavLink>
             </ListItemIcon>
           </ListItem>

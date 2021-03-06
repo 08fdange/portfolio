@@ -22,10 +22,6 @@
   background-color: black;
 }
 
-.drawer-option:hover {
-  color: #669999;
-}
-
 .MuiSvgIcon-root {
   color: white !important;
 }
@@ -34,12 +30,21 @@
   color:  #669999 !important;
 }
 
-a.app-bar-button:hover {
+a.app-bar-button.active:hover {
   color:  #669999 !important;
 }
 
-a.app-bar-button.active:hover {
-  color:  #669999 !important;
+.drawer-button-div {
+  display: flex;
+  align-items: center;
+}
+
+.drawer-button-div:hover {
+  color:#669999;
+}
+
+.drawer-button-div:hover .MuiSvgIcon-root {
+  color: #669999 !important;
 }
 
 @media only screen and (max-width: 600px) {
